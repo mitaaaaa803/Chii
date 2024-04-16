@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="aboutus.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- 導覽列 -->
@@ -21,10 +22,10 @@
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
                     <ul class="submenu">
-                        <li><a href="#">所有商品</a></li>
-                        <li><a href="#">生日禮盒</a></li>
-                        <li><a href="#">節慶禮盒</a></li>
-                        <li><a href="#">企業禮盒</a></li> 
+                        <li><a href="./allproduct.html">所有商品</a></li>
+                        <li><a href="./makeyourown.html">生日禮盒</a></li>
+                        <li><a href="./makeyourown.html">節慶禮盒</a></li>
+                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
                     </ul>  
                 </li>
 
@@ -34,8 +35,8 @@
                 <li>
                     <a href="./order.html">常見問題</a>
                     <ul class="submenu">
-                        <li><a href="#">訂購須知</a></li>
-                        <li><a href="#">訂單相關問題</a></li>
+                        <li><a href="./order.html">訂購須知</a></li>
+                        <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,7 +49,7 @@
 
     <!-- 關於我們 -->
     <div class="aboutus">
-        <div class="aboutus-container">
+        <div class="aboutus-container" data-aos="fade-right" data-aos-duration="2000">
             <div class="wrap-aboutus-title-txt">
                 <div class="aboutus-title">
                     <h4>關於我們</h4>
@@ -65,7 +66,7 @@
     </div>
 <!-- 好吃的杯子蛋糕 -->
     <section class="yummycupcake">
-        <div class="yummycupcake-container">
+        <div class="yummycupcake-container" data-aos="fade-left" data-aos-duration="2000">
             <div class="yummycupcake-pic">
                 <img src="aboutus-pic2.png" alt="">
             </div>
@@ -99,5 +100,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

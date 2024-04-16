@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style-home.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,10 +23,10 @@
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
                     <ul class="submenu">
-                        <li><a href="#">所有商品</a></li>
-                        <li><a href="#">生日禮盒</a></li>
-                        <li><a href="#">節慶禮盒</a></li>
-                        <li><a href="#">企業禮盒</a></li> 
+                        <li><a href="./allproduct.html">所有商品</a></li>
+                        <li><a href="./makeyourown.html">生日禮盒</a></li>
+                        <li><a href="./makeyourown.html">節慶禮盒</a></li>
+                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
                     </ul>  
                 </li>
 
@@ -35,8 +36,8 @@
                 <li>
                     <a href="./order.html">常見問題</a>
                     <ul class="submenu">
-                        <li><a href="#">訂購須知</a></li>
-                        <li><a href="#">訂單相關問題</a></li>
+                        <li><a href="./order.html">訂購須知</a></li>
+                        <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
                 </li>
             </ul>
@@ -151,7 +152,7 @@
     <!-- 創造你自己的 -->
     <section class="createyourown">
         <div class="createyourown-container">
-                <div class="createyourown-txt">
+                <div class="createyourown-txt" data-aos="zoom-in" data-aos-duration="2000">
                     <a href="./createyourown-bg.png"> 
                         <h4>CREATE YOUR OWN</h4>
                         <p>創造一個屬於你自己的</p>
@@ -193,7 +194,7 @@
 
     <!-- menu -->
     <section class="menu">
-        <div class="menu-container">
+        <div class="menu-container" data-aos="zoom-in-up" data-aos-duration="2000">
             <div class="menu-menu">
                 <h3>Menu</h3>
             </div>
@@ -313,5 +314,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
