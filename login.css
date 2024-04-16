@@ -1,0 +1,105 @@
+.login-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+}
+
+.login-title{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #878484;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.wrap-login{
+    border: 1px solid #F2D9D6;
+    border-radius: 15px;
+}
+.login-email{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login-email input{
+    background: #FAEFED;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+.login-email :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+.login-password{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login-password :focus{
+    border: 0.05em solid #f7e1dd;
+    outline: none;
+}
+input:focus::placeholder{
+    opacity: 0.5;
+}
+.login-password input{
+    background: #FAEFED;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+.login-forgotpassword{
+    padding-bottom: 20px;
+    padding-left: 380px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
+.login-forgotpassword a{
+    text-decoration: none;
+    color: #878484;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.login-forgotpassword a :hover{
+    color: #DE3131;
+}
+.login-button{
+    text-align: center;
+    padding: 15px 35px;
+    width: 100px;
+    margin: auto;
+    border: 1px solid #DE3131;
+    border-radius: 20px;
+}
+.login-button a:hover{
+    color: #DE3131;
+}
+.login-button a{
+    text-decoration: none;
+    color: #878484;
+    font-size: 20px;
+    letter-spacing: 2px;  
+}
+.login-createaccount{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login-createaccount a{
+    text-decoration: none;
+    color: #878484;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.login-createaccount a:hover{
+    color: #DE3131;
+}

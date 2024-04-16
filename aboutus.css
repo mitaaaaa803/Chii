@@ -1,0 +1,73 @@
+.aboutus{
+    margin-top: 150px;
+}
+.aboutus-container{
+    width: 90%;
+    /* margin: auto; */
+    display: flex;
+    background-image: url(rectangle1.png);
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.aboutus-title{
+    color: #878484;
+    font-size: 36px;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.aboutus-title-txt{
+    color: #878484;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-right: 15px;
+}
+.aboutus-title-pic{
+    margin-top: 20px;
+}
+.aboutus-title-pic img{
+    border-radius: 20px;
+}
+.wrap-aboutus-title-txt{
+    margin-left: 20px;
+}
+/* 好吃的杯子蛋糕 */
+.yummycupcake{
+    margin-top: 150px;
+}
+.yummycupcake-container{
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    background-image: url(rectangle2.png);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    /* border: 1px solid rebeccapurple; */
+}
+.yummycupcake-background{
+    margin-left: 230px;
+    /* border: 1px solid red; */
+}
+.yummycupcake-title{
+    color: #878484;
+    font-size: 36px;
+    /* border: 1px solid red; */
+    margin-left: 15px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.yummycupcake-txt{
+    color: #878484;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-left: 15px;
+}
+.yummycupcake-pic{
+    margin-top: 20px;
+}
+.yummycupcake-pic img{
+    border-radius: 20px;
+}

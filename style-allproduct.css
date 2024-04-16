@@ -1,0 +1,122 @@
+/* 搜尋產品 */
+.search{
+    margin-top: 50px;
+}
+.search-container{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.wrap-search-icon-txt{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.wrap-search-icon-txt input{
+    background-color: #EDC8C3;
+    border: none;
+    border-radius: 8px;
+    line-height: 2;
+}
+.placeholder::placeholder{
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+input:focus::placeholder{
+    opacity: 0.5;
+}
+.search-icon{
+    /* border: 1px solid red;s */
+    position: absolute;
+    right: 145px;
+    font-size: 12px;
+    color: #878484;
+}
+.wrap-search-icon-txt :focus{
+    outline: none;
+}
+
+/* 杯子蛋糕 */
+.cupcake{
+    margin-top: 50px;
+}
+.cupcake-container{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
+    width: 90%;    
+    margin: 0 auto;
+}
+.cupcake-container a{
+    /* border: 1px solid red; */
+    margin: auto;
+    text-decoration: none;
+}
+.cupcake-pic{
+    padding: 20px;
+    /* border: 1px solid red; */
+    width: 200px;
+    position: relative;
+}
+.cupcake-pic img{
+    width: 100%;
+}
+.addtocart-button{
+    /* border: 1px solid red; */
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    background-color: #EDC8C3;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    display: none;
+}
+.addtocart-button p{
+    color: #777777;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+.cupcake-txt{
+    text-align: center;
+    color: #867979;
+    letter-spacing: 2px;
+}
+.cupcake-txt p{
+    margin-top: 10px;
+}
+.cupcake-item:hover .addtocart-button{
+    display: block;
+    /* transition: 2s; */
+}
+/* 頁數 */
+.page{
+    padding-top: 80px;
+}
+.page-container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.page-container a{
+    text-decoration: none;
+}
+.page-num{
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5d4c4cc9;
+    background-color: #F2D9D6;
+    border-radius: 20px;
+}
+.page-num:hover{
+    color: #DE3131;
+}

@@ -1,0 +1,56 @@
+/* 頁首 */
+.header{
+    background-color: #FDF8F1;
+    padding-top: 3px;
+}
+.header .continer {
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    width: 45px;
+}
+.header-logo img{
+    width: 100%;
+}
+.header-link {
+    display: flex;
+}
+.header-link li a{
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #878484;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
+.header-link li a:hover{
+    color: #DE3131;
+}
+.container .header-link li{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    background-color:#FDF8F1;
+    border-top: none;
+    padding-top: 10px;
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 10px;
+}
+li:hover .submenu{
+    display: block;
+}
+.header-cart-user i{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #878484;
+}

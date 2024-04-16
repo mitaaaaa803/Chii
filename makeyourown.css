@@ -1,0 +1,243 @@
+.givethemsurprice{
+    margin-top: 50px;
+}
+.givethemsurprice-container{
+    width: 90%;
+    margin: auto;
+    padding: 40px 25px;
+    border: 1px solid #D7C4C4;
+    border-radius: 10px;
+}
+.wrap-givethemsurprice-txt-pic{
+    display: flex;
+}
+.wrap-givethemsurprice-txt-button{
+    padding: 70px 40px 40px 40px;
+}
+.givethemsurprice-title{
+    color: #5D4C4C;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.givethemsurprice-txt{
+    color: #867979;
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
+.givethemsurprice-txt p{
+    margin-bottom: 3px;
+}
+.givethemsurprice-txt-sectitle{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.givethemsurprice-button{
+    background-color:#F2D9D6;
+    border-radius: 15px;
+    width: 80px;
+}
+.givethemsurprice-button{
+    margin-top: 30px;
+    padding: 13px 15px;
+    margin-left: auto;
+}
+.givethemsurprice-button a:hover{
+    color: #DE3131;
+}
+.givethemsurprice-button a{
+    text-decoration: none;
+    color: #867979;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.givethemsurprice-button a:hover{
+    /* color: #D7C4C4; */
+}
+.givethemsurprice-pic{
+    width: 100%;
+}
+.givethemsurprice-pic img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* 卡片 */
+.makeyourown{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+}
+.makeyourown-card-container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.wrap-makeyourown-card{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.wrap-makeyourown-card a{
+    text-decoration: none;
+}
+.makeyourown-card-pic{
+    /* border: 1px solid red; */
+    width: 200px;
+    position: relative;
+}
+.makeyourown-card-pic img{
+    width: 100%;
+}
+.addtocart-button{
+    /* border: 1px solid red; */
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    background-color: #EDC8C3;
+    padding: 15px 65px;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+}
+.addtocart-button p{
+    color: #777777;
+    font-size: 12px;
+    /* border: 1px solid red; */
+}
+.makeyourown-card:hover .addtocart-button{
+    display: block;
+    transition: 2s;
+}
+.makeyourown-txt{
+    margin-top: 10px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    /* border: 1px solid red; */
+    color: #867979;
+}
+.makeyourown-card-name{
+    text-align: center;
+}
+.wrap-makeyourown-card-num-price{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.makeyourown-more{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:10px;
+    background-color:#F2D9D6;
+    position: absolute;
+    right: 0;
+    bottom: -90px;
+    padding: 15px 20px;
+}
+.makeyourown-more a{
+    color: #867979;
+    text-decoration: none;
+}
+.makeyourown-more a:hover{
+    color: #DE3131;
+}
+/* 作品參考 */
+.collection{
+    margin-top: 200px;
+}
+.collection-container{
+    width: 80%;
+    margin: auto;
+}
+.collection-title{
+    text-align: center;
+    color: #5D4C4C;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.collection-title-line{
+    height: 5px;
+    width: 100px;
+    border-bottom: 1px solid #7F7F7F;
+    margin: auto;
+    margin-top: 5px;
+}
+.wrap-collection-pic{
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.collection-pic{
+    width: 290px;
+}
+.collection-pic img{
+    width: 100%;
+}
+/* 立即諮詢 */
+.consultnow{
+    margin-top: 200px;
+}
+.consultnow-container{
+    width: 70%;
+    margin: auto;
+}
+.consultnow-tilte{
+    text-align: center;
+    color: #5D4C4C;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.consultnow-title-line{
+    height: 5px;
+    width: 100px;
+    border-bottom: 1px solid #7F7F7F;
+    margin: auto;
+    margin-top: 5px;
+}
+.collection-input{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    background: #FAEFED;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+input:focus::placeholder{
+    opacity: 0.5;
+}
+.collection-txt{
+    margin-bottom: 10px;
+}
+.collection-txt :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+.collection-message textarea{
+    /* background: #FAEFED; */
+    border: none;
+    border: 3px solid #FAEFED;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+.collection-message :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+textarea:focus::placeholder{
+    opacity: 0.5;
+}

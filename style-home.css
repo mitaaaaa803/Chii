@@ -1,0 +1,369 @@
+/* banner */
+.banner-background{
+    width: 100%;
+    height: 607px;
+    background-color: #FDF8F1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner-txt p{
+    font-size: 50px;
+    color: #E97976;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
+.banner-button{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+.banner-button a{
+    text-decoration: none;
+    background-color: #F2D9D6;
+    padding: 20px 35px 20px;
+    border-radius: 12px;
+    color: #878484;
+    letter-spacing: 5px;
+    font-size: 16px;
+    /* border: 1px solid red; */
+}
+.banner-button a:hover{
+    color: #DE3131;
+}
+.banner-wrap-txt-button{
+    /* border: 1px solid red; */
+    margin-left: 50px;
+}
+.banner-pic{
+    /* border: 1px solid red; */
+    width: 650px;
+}
+.banner-pic img{
+    width: 100%;
+}
+.banner-page1{
+    width: 8px;
+    height: 8px;
+    background-color: #F2D9D6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 610px;
+}
+.banner-page1:hover{
+    background-color: #DE3131;
+}
+.banner-page2{
+    width: 8px;
+    height: 8px;
+    background-color: #F2D9D6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 640px;
+}
+.banner-page2:hover{
+    background-color: #DE3131;
+}
+.banner-page3{
+    width: 8px;
+    height: 8px;
+    background-color: #F2D9D6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 670px;
+}
+.banner-page3:hover{
+    background-color: #DE3131;
+}
+
+
+/* 禮盒組 */
+.giftbox{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 80px;
+}
+.giftbox .giftbox-container{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.giftbox .giftbox-pic{
+    /* border: 1px solid red; */
+    width: 310px;
+    height: 185px;
+    position: relative;
+    overflow: hidden;
+}
+.giftbox .giftbox-pic a img{
+    width: 100%;
+}
+.giftbox .giftbox-pic p{
+    /* border: 1px solid red; */
+    text-align: center;
+    align-content: center;
+    width: 180px;
+    height: 80px;
+    background-color: #ffffff90;
+    color: #8A7171;
+    font-size: 16px;
+    letter-spacing: 5px;
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+.giftbox .giftbox-pic a{ 
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.giftbox .giftbox-pic a:hover{
+    animation: moveLEFTRIGHT 0.5s infinite alternate;
+}
+@keyframes moveLEFTRIGHT {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-15px);
+    }
+}
+
+/* top3 */
+.topthree-container{
+    width: 100%;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.topthree-pic{
+    /* border: 1px solid red; */
+    width: 120px;
+    margin: auto;
+}
+.topthree-pic img{
+    width: 100%;
+}
+.topthree-txt{
+    /* border: 1px solid red; */
+    color: rgb(80, 80, 80);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.wrap-topthree-card{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.topthree-card{
+    /* border: 1px solid red; */
+    transition: 0.3s;
+}
+.topthree-card .card-pic img{
+    max-width: 100%;
+    height: auto;
+}
+.topthree-card .card-pic:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
+.card-txt{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #867979;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+.card-txt p{
+    margin-top: 8px;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+a .topthree-card .card-txt h3:hover{
+    color: #DE3131;
+}
+.topthree-more{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:10px;
+    background-color:#F2D9D6;
+    position: absolute;
+    right: 90px;
+    bottom: -50px;
+    padding: 15px 20px;
+}
+.topthree-more a{
+    color: #867979;
+}
+.topthree-more a:hover{
+    color: #DE3131;
+}
+
+/* 創造自己的 */
+.createyourown{
+    background-image: url(createyourown-bg.png);
+    height: 510px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createyourown-txt{
+    background-color: #ffffffa5;
+    line-height: 1.5;
+    padding: 45px 60px 45px 60px;
+}
+.createyourown-txt a{
+    color: #5D4C4C;
+}
+.createyourown-txt h4{
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+.createyourown-txt p{
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+
+/* 我們所做的 */
+.whatwedo-container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #ffffff;
+}
+.wrap-whatwedo-txt{
+    /* border: 1px solid red; */
+    align-content: center;
+    line-height: 2;
+    padding-left: 15px;
+}
+.whatwedo-txt h4{
+    /* border-bottom: 1px solid red; */
+    font-size: 20px;
+    color: #5D4C4C;
+}
+.whatwedo-txt p{
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #5D4C4C;
+    /* display: none; */
+}
+.whatwedo-pic{
+    width: 600px;
+}
+.whatwedo-pic img{
+    width: 100%;
+}
+
+/* menu */
+.menu-container{
+    background-image: url(menu-bg.png);
+    background-size: cover;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.menu-menu{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    color: #5D4C4C;
+    letter-spacing: 5px;
+}
+.menu-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.menu-items .item a{
+    background-color: #FDF8F1;
+    border: 1px solid #f4eee5de;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.menu-items .item a img{
+    width: 70px;
+}
+.menu-item-txt{
+    /* border: 1px solid red; */
+    margin-left: 15px;
+    color: #5D4C4C;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.menu-item-addtocart{
+    background-color: #5D4C4C;
+}
+.menu-item-more{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:10px;
+    background-color:#F2D9D6;
+    position: absolute;
+    right: 155px;
+    bottom: 25px;
+    padding: 15px 20px;
+}
+.menu-item-more a{
+    color: #867979;
+}
+.menu-item-more a:hover{
+    color: #DE3131;
+}
+
+/* 找到我們 */
+.findus-container{
+    /* border: 1px solid red; */
+    background-image: url(findus-bg.png);
+    padding-top: 400px;
+    /* margin-bottom: 100px; */
+    background-size: cover;
+    position: relative;
+}
+.findus-txt{
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+    text-align: center;
+    line-height: 3;
+    color: #8C8787;
+}
+.findus-button{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:10px;
+    background-color:#F2D9D6;
+    position: absolute;
+    right: 190px;
+    bottom: 80px;
+    padding: 15px 50px;
+}
+.findus a{
+    color: #867979;
+}
+.findus a:hover{
+    color: #DE3131;
+}

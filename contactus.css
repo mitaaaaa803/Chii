@@ -1,0 +1,138 @@
+.contactus-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+}
+
+.contactus-title{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #878484;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactus-name{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactus-name input{
+    background: #FAEFED;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+input:focus::placeholder{
+    opacity: 0.5;
+}
+.contactus-name :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+.contactus-email{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactus-email input{
+    background: #FAEFED;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+.contactus-email :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+.contactus-message{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contactus-message textarea{
+    /* background: #FAEFED; */
+    border: none;
+    border: 3px solid #FAEFED;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+textarea:focus::placeholder{
+    opacity: 0.5;
+}
+.contactus-message :focus{
+    border: 0.1em solid #f7e1dd;
+    outline: none;
+}
+.contactus-send-button{
+    text-align: center;
+    padding: 15px 35px;
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #DE3131;
+    border-radius: 20px;
+}
+.contactus-send-button a{
+    text-decoration: none;
+    color: #878484;
+    font-size: 20px;
+    letter-spacing: 2px;  
+}
+.contactus-send-button a:hover{
+    color: #DE3131;
+}
+
+
+/* 找到我們 */
+.findus{
+    margin-top: 100px;
+}
+.findus-container{
+    /* border: 1px solid red; */
+    background-image: url(findus-bg.png);
+    padding-top: 400px;
+    /* margin-bottom: 100px; */
+    background-size: cover;
+    position: relative;
+}
+.findus-txt{
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+    text-align: center;
+    line-height: 3;
+    color: #8C8787;
+}
+.findus-button{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:10px;
+    background-color:#F2D9D6;
+    position: absolute;
+    right: 190px;
+    bottom: 80px;
+    padding: 15px 50px;
+}
+.findus a{
+    text-decoration: none;
+    color: #867979;
+}
+.findus a:hover{
+    color: #DE3131;
+}

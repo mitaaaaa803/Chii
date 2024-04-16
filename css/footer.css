@@ -1,0 +1,36 @@
+/* 頁尾 */
+.footer{
+    /* border: 1px solid red; */
+    padding-top: 100px;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.footer-logo{
+    /* border: 1px solid red; */
+    width: 60px;
+    margin: auto;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-ig-fb{
+    /* border: 1px solid red; */
+    width: 112px;
+    margin: auto;
+}
+.footer-ig-fb a i{
+    /* border: 1px solid red; */
+    margin: 20px 10px;
+    color: #F2D9D6;
+}
+.footer-txt{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #803636;
+}
+.footer-txt p{
+    font-size: 12px;
+}
