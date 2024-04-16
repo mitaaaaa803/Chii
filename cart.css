@@ -1,0 +1,108 @@
+/* 購物車 */
+.cart{
+    margin-top: 100px;
+}
+.cart-container{
+    width: 90%;
+    margin: auto;
+}
+.cart-shoppingcart{
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
+.cart-title{
+    border-bottom: 1px solid #9a95948e;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    text-align: center;
+    letter-spacing: 2px;
+    color: #5D4C4C;
+}
+.cart-list{
+    display: grid;
+    grid-template-columns: repeat(6, 100px 100px 205px 265px 295px 100px);
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #9a95948e;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.product-desciption-number{
+    display: flex;
+    flex-grow: 1;
+    color: #867979;
+}
+.product-desciption-number h5{
+    margin-right: 10px;
+}
+.fa-solid{
+    color: #9A9594;
+    font-size: 12px;
+    margin: 3px;
+}
+.cart-list-xmark{
+    color: #9A9594;
+}
+.cart-list-pic{
+    width: 100px;
+}
+.cart-list-name{
+    color: #867979;
+}
+.cart-list-price{
+    color: #867979;
+}
+.cart-list-pic img{
+    width: 100%;
+}
+.cart-list-subtotal{
+    color: #9A9594;
+}
+/* 訂單資訊 */
+.cart-total{
+    margin-top: 100px;
+}
+.cart-total-container{
+    width: 90%;
+    margin: auto;
+}
+.cart-total-orderinfo{
+    font-size: 30px;
+    width: 120px;
+    margin-bottom: 35px;
+    color: #9A9594;
+}
+.cart-total-subtotal{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9a95948e;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #9A9594;
+}
+.cart-total-price{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9a95948e;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #9A9594;
+}
+.cart-total-checkout a{
+    text-decoration: none;
+    color: #867979;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color:#F2D9D6;
+    padding: 15px;
+    width: 80px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+.cart-total-checkout a:hover{
+    color: #DE3131;
+}

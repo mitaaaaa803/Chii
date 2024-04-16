@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chii | 登入</title>
+    <title>Chii | 購物車</title>
     <link rel="stylesheet" href="reset.css">
     <script src="https://kit.fontawesome.com/7a89b1a70b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <!-- 導覽列 -->
@@ -45,29 +45,57 @@
             </div>
         </div>
     </header>
-    
-    <!-- 登入 -->
-    <section class="login">
-        <div class="login-container">
-            <div class="wrap-login">
-                <div class="login-title">
-                    <p>Login</p>
+    <!-- 購物車 -->
+    <section class="cart">
+        <div class="cart-container">
+            <div class="cart-shoppingcart">
+                <h5>/購物車/</h5>
+            </div>
+            <div class="cart-title">
+                <p>產品</p>
+                <p>價格</p>
+                <p>數量</p>
+                <p>小計</p>
+            </div>
+            <div class="cart-list">
+                <div class="cart-list-xmark">
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div class="login-email">
-                    <input type="email" placeholder="電子信箱">
+                <div class="cart-list-pic">
+                    <img src="top1-fotor-20240405184445.png" alt="">
                 </div>
-                <div class="login-password">
-                    <input type="password" placeholder="密碼">
+                <div class="cart-list-name">
+                    <p>香草櫻桃</p>
                 </div>
-                <div class="login-forgotpassword">
-                    <a href="#"><p>忘記密碼?</p></a>
+                <div class="cart-list-price">
+                    <p>$80</p>
                 </div>
-                <div class="login-button">
-                    <a href="#"><p>登入</p></a>
+                <div class="product-desciption-number">
+                    <h5>數量</h5>
+                    <p><a href="#"><i class="fa-solid fa-minus"></i></a></i>1<a href="#"><i class="fa-solid fa-plus"></i></a></p>
+                </div>  
+                <div class="cart-list-subtotal">
+                    <p>$80</p>
                 </div>
-                <div class="login-createaccount">
-                    <a href="#"><p>建立帳戶</p></a>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-total">
+        <div class="cart-total-container">
+            <div class="cart-total-orderinfo">
+                <h4>訂單資訊</h4>
+            </div>
+            <div class="cart-total-subtotal">
+                <p>小計:</p>
+                <p>$80</p>
+            </div>
+            <div class="cart-total-price">
+                <p>合計:</p>
+                <p>$80</p>
+            </div>  
+            <div class="cart-total-checkout">
+                <a href="#">前往結帳</a>     
             </div>
         </div>
     </section>
@@ -76,7 +104,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <a href="./home.html"><img src="favicon.ico" alt=""></a>
+                <a href="#"><img src="favicon.ico" alt=""></a>
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
