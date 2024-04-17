@@ -37,7 +37,12 @@
 .product-desciption-number h5{
     margin-right: 10px;
 }
-.fa-solid{
+.fa-minus{
+    color: #9A9594;
+    font-size: 12px;
+    margin: 3px;
+}
+.fa-plus{
     color: #9A9594;
     font-size: 12px;
     margin: 3px;
