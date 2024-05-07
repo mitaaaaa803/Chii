@@ -30,7 +30,26 @@
     .whatwedo-txt p.show {
         display: block;
         max-height: 500px;
-        /* 设置一个足够大的值，以确保内容完全展开 */
+    }
+    /* 往上箭頭 */
+    .fa-circle-arrow-up {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        display: none;
+        z-index: 4;
+        cursor: pointer;
+        color: #e97a76c1;
+        font-size: 35px;
+        animation: jumpUp 0.5s infinite alternate;
+    }
+    @keyframes jumpUp {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px); /* 往上跳動的距離 */
+        }
     }
 </style>
 
@@ -116,6 +135,9 @@
             </div>
         </div>
     </section>
+
+    <!-- 往上箭頭 -->
+    <i id="scrollToTopBtn" class="fa-solid fa-circle-arrow-up"></i>
 
     <!-- top3 -->
     <section class="topthree">
@@ -367,8 +389,23 @@
         });
     </script>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 100) { 
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
 
-
+        document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
