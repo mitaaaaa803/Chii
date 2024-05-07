@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="contactus.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -24,8 +26,8 @@
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
-                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
-                    </ul>  
+                        <li><a href="./makeyourown.html">企業禮盒</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="./aboutus.html">關於我們</a></li>
@@ -44,7 +46,7 @@
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#"><i class="fa-solid fa-bars"></i></a>
-                <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -95,7 +97,7 @@
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footer-txt">
@@ -106,7 +108,7 @@
 
     <script>
         // 導覽列
-        document.querySelector('.fa-bars').addEventListener('click', function() {
+        document.querySelector('.fa-bars').addEventListener('click', function () {
             let headerLink = document.querySelector('.header-link')
             let currentLeft = parseInt(headerLink.style.left)
 
@@ -114,6 +116,33 @@
             headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
         });
 
+
+        // 傳送按鈕
+        document.querySelector('.contactus-send-button').addEventListener('click', function () {
+            var nameInput = document.querySelector('.contactus-name input');
+            var emailInput = document.querySelector('.contactus-email input');
+            var messageTextarea = document.querySelector('.contactus-message textarea');
+
+            var name = nameInput.value;
+            var email = emailInput.value;
+            var message = messageTextarea.value;
+
+            if (name === '' || email === '' || message === '') {
+                alert('請填寫所有欄位才能傳送。');
+                return;
+            }
+
+            nameInput.value = '';
+            emailInput.value = '';
+            messageTextarea.value = '';
+
+            alert('傳送成功！');
+        });
+
+
     </script>
+
+
 </body>
+
 </html>

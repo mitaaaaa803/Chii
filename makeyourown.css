@@ -357,13 +357,11 @@ input:focus::placeholder{
     margin-bottom: 10px;
 }
 .collection-txt :focus{
-    border: 0.1em solid #f7e1dd;
     outline: none;
 }
 .collection-message textarea{
-    /* background: #FAEFED; */
     border: none;
-    border: 3px solid #FAEFED;
+    border: 2px solid #FAEFED;
     width: 400px;
     height: 150px;
     border-radius: 15px;
@@ -372,7 +370,6 @@ input:focus::placeholder{
     letter-spacing: 2px;
 }
 .collection-message :focus{
-    border: 0.1em solid #f7e1dd;
     outline: none;
 }
 textarea:focus::placeholder{
