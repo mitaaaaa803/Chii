@@ -18,8 +18,9 @@
 }
 .footer-ig-fb{
     /* border: 1px solid red; */
-    width: 112px;
+    width: 200px;
     margin: auto;
+    text-align: center;
 }
 .footer-ig-fb a i{
     /* border: 1px solid red; */
@@ -32,5 +33,12 @@
     color: #803636;
 }
 .footer-txt p{
+    /* border: 1px solid red; */
     font-size: 12px;
+}
+@media screen and (max-width: 768px){
+    .footer-txt p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -20,12 +22,12 @@
             <ul class="header-link">
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
-                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
-                    </ul>  
+                        <li><a href="./makeyourown.html">企業禮盒</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="./aboutus.html">關於我們</a></li>
@@ -33,7 +35,7 @@
                 <li><a href="./contactus.html">聯絡我們</a></li>
                 <li>
                     <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
@@ -41,7 +43,8 @@
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -64,12 +67,19 @@
                 </div>
                 <div class="wrap-product-desciption-number-cart">
                     <div class="product-desciption-number">
-                        <h5>數量</h5>
-                        <p><a href="#"><i class="fa-solid fa-minus"></i></a></i>1<a href="#"><i class="fa-solid fa-plus"></i></a></p>
+                        <a href="#">
+                            <i class="fa-solid fa-minus"></i>
+                        </a>
+                        <input type="number" value="1">
+                        <a href="#">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
                     </div>
-                    <a href="#"><div class="product-desciption-cartbutton">
-                        <p>加入購物車</p>
-                    </div></a>
+                    <a href="#">
+                        <div class="product-desciption-cartbutton">
+                            <p>加入購物車</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -88,7 +98,9 @@
                         <a href="#"><img src="./cupcake.pic/4cupcake.png" alt=""></a>
                     </div>
                     <div class="youmightlike-card-txt">
-                        <a href="#"><h5>香草香草</h5></a>
+                        <a href="#">
+                            <h5>香草香草</h5>
+                        </a>
                         <p>$80</p>
                     </div>
                 </div>
@@ -97,7 +109,9 @@
                         <a href="#"><img src="./cupcake.pic/6cupcake (2).png" alt=""></a>
                     </div>
                     <div class="youmightlike-card-txt">
-                        <a href="#"><h5>氣球花園</h5></a>
+                        <a href="#">
+                            <h5>氣球花園</h5>
+                        </a>
                         <p>$80</p>
                     </div>
                 </div>
@@ -106,7 +120,9 @@
                         <a href="#"><img src="./cupcake.pic/top2-fotor-20240405184756.png" alt=""></a>
                     </div>
                     <div class="youmightlike-card-txt">
-                        <a href="#"><h5>摩卡森林</h5></a>
+                        <a href="#">
+                            <h5>摩卡森林</h5>
+                        </a>
                         <p>$80</p>
                     </div>
                 </div>
@@ -115,7 +131,9 @@
                         <a href="#"><img src="./cupcake.pic/top3-fotor-20240405184856.png" alt=""></a>
                     </div>
                     <div class="youmightlike-card-txt">
-                        <a href="#"><h5>樂巧密語</h5></a>
+                        <a href="#">
+                            <h5>樂巧密語</h5>
+                        </a>
                         <p>$80</p>
                     </div>
                 </div>
@@ -144,9 +162,9 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="customer-comment">
-                            <p>這款草莓杯子蛋糕真是太可愛了！草莓的酸甜適中，口感十分清新，是我最愛的下午茶點心之一</p>
+                            <p>這款草莓杯子蛋糕真是太可愛了！草莓的酸甜適中，口感十分清新，是我最愛的下午茶點心之一。</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="customer-reviews-list">
                     <div class="customer-reviews-list-pic">
@@ -161,9 +179,9 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="customer-comment">
-                            <p>杯子蛋糕的巧克力味道不錯，蛋糕質地相當紮實</p>
+                            <p>杯子蛋糕的巧克力味道不錯，蛋糕質地相當紮實。</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="customer-reviews-list">
                     <div class="customer-reviews-list-pic">
@@ -178,9 +196,9 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="customer-comment">
-                            <p>香草杯子蛋糕的香草味道很濃，蛋糕很濕潤，值得一試</p>
+                            <p>香草杯子蛋糕的香草味道很濃，蛋糕很濕潤，值得一試。</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="customer-reviews-list">
                     <div class="customer-reviews-list-pic">
@@ -195,15 +213,21 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="customer-comment">
-                            <p>檸檬杯子蛋糕的檸檬味道清新，口感輕盈，適合作為下午茶點心</p>
+                            <p>檸檬杯子蛋糕的檸檬味道清新，口感輕盈，適合作為下午茶點心。</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="customer-reviews-button">
-                    <a href="#"><p>寫評論</p></a>
+                    <a href="#">撰寫評論</a>
                 </div>
             </div>
-        </div> 
+            <!-- <div id="commentBox" class="comment-box">
+                <textarea id="commentInput" rows="4" cols="50" placeholder="請在這裡輸入您的評論..."></textarea>
+                <button id="submitComment">提交</button>
+                <button id="cancelComment">取消</button>
+            </div> -->
+
+        </div>
     </section>
 
     <!-- 頁尾 -->
@@ -214,7 +238,7 @@
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footer-txt">
@@ -222,5 +246,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+
+    </script>
+
+    <script>
+        //數量+1 -1
+        let minusButton = document.querySelector('.fa-minus')
+        let plusButton = document.querySelector('.fa-plus')
+        let inputField = document.querySelector('input[type="number"]')
+
+        minusButton.addEventListener('click', function () {
+            let value = parseInt(inputField.value);
+            if (value > 1) {
+                value--;
+            }
+
+            inputField.value = value
+        });
+
+        plusButton.addEventListener('click', function () {
+            let value = parseInt(inputField.value);
+            value++;
+            inputField.value = value;
+        });
+    </script>
 </body>
+
 </html>

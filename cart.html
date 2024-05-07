@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -20,12 +22,12 @@
             <ul class="header-link">
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
-                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
-                    </ul>  
+                        <li><a href="./makeyourown.html">企業禮盒</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="./aboutus.html">關於我們</a></li>
@@ -33,7 +35,7 @@
                 <li><a href="./contactus.html">聯絡我們</a></li>
                 <li>
                     <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
@@ -41,7 +43,8 @@
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -71,11 +74,12 @@
                     <p>$80</p>
                 </div>
                 <div class="product-desciption-number">
-                    <h5>數量</h5>
-                    <p><a href="#"><i class="fa-solid fa-minus"></i></a></i>1<a href="#"><i class="fa-solid fa-plus"></i></a></p>
-                </div>  
+                    <a href="#"><i class="fa-solid fa-minus"></i></a>
+                    <input type="text" name="" id="" value="1">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                </div>
                 <div class="cart-list-subtotal">
-                    <p>$80</p>
+                    <input type="text" value="$ 80">
                 </div>
             </div>
         </div>
@@ -88,14 +92,14 @@
             </div>
             <div class="cart-total-subtotal">
                 <p>小計:</p>
-                <p>$80</p>
+                <input value="80"></input>
             </div>
             <div class="cart-total-price">
                 <p>合計:</p>
-                <p>$80</p>
-            </div>  
+                <input value="80"></input>
+            </div>
             <div class="cart-total-checkout">
-                <a href="#">前往結帳</a>     
+                <a href="#">前往結帳</a>
             </div>
         </div>
     </section>
@@ -108,7 +112,7 @@
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footer-txt">
@@ -116,5 +120,66 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+
+    </script>
+
+    <script>
+        // 加減數量
+        const minusBtn = document.querySelector('.fa-minus');
+        const plusBtn = document.querySelector('.fa-plus');
+        const xMark = document.querySelector('.fa-xmark'); // 新增的代碼
+        
+
+        const quantityInput = document.querySelector('.product-desciption-number input');
+        const subtotalInput = document.querySelector('.cart-list-subtotal input');
+        const subtotalTotalInput = document.querySelector('.cart-total-subtotal input');
+        const totalInput = document.querySelector('.cart-total-price input');
+
+        let price = parseInt(document.querySelector('.cart-list-price p').textContent.replace('$', ''), 10);
+        let quantity = parseInt(quantityInput.value, 10);
+
+        function updateSubtotal() {
+            const newSubtotal = price * quantity;
+            subtotalInput.value = '$' + newSubtotal;
+            subtotalTotalInput.value = '$' + newSubtotal;
+            totalInput.value = '$' + newSubtotal;
+        }
+
+        minusBtn.addEventListener('click', function () {
+            if (quantity > 1) {
+                quantity -= 1;
+                quantityInput.value = quantity;
+                updateSubtotal();
+            }
+        });
+
+        plusBtn.addEventListener('click', function () {
+            quantity += 1;
+            quantityInput.value = quantity;
+            updateSubtotal();
+        });
+
+        xMark.addEventListener('click', function () { // 新增的代碼
+            const cartList = document.querySelector('.cart-list');
+            cartList.style.display = 'none'; // 隱藏相關元素
+
+            subtotalTotalInput.value = '$0';
+                totalInput.value = '$0';
+        });
+
+        updateSubtotal();
+
+    </script>
 </body>
+
 </html>

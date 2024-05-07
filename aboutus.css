@@ -3,7 +3,6 @@
 }
 .aboutus-container{
     width: 90%;
-    /* margin: auto; */
     display: flex;
     background-image: url(rectangle1.png);
     /* border: 1px solid red; */
@@ -33,6 +32,36 @@
 .wrap-aboutus-title-txt{
     margin-left: 20px;
 }
+@media screen and (max-width: 768px){
+    .aboutus{
+        margin-top: 0;
+    }
+    .aboutus-container{
+        /* border: 1px solid red; */
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        background-size: contain;
+    }
+    .aboutus-title{
+        margin-top: 100px;
+    }
+    .aboutus-title-pic{
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+    }
+    .aboutus-title-pic img{
+        width: 100%;
+    }
+    .aboutus-title{
+        font-size: 30px;
+    }
+    .aboutus-title-txt p{
+        font-size: 12px;
+    }
+}
 /* 好吃的杯子蛋糕 */
 .yummycupcake{
     margin-top: 150px;
@@ -47,8 +76,12 @@
     /* border: 1px solid rebeccapurple; */
 }
 .yummycupcake-background{
+    width: 40%;
     margin-left: 230px;
     /* border: 1px solid red; */
+}
+.yummycupcake-background img{
+    width: 100%;
 }
 .yummycupcake-title{
     color: #878484;
@@ -70,4 +103,43 @@
 }
 .yummycupcake-pic img{
     border-radius: 20px;
+}
+@media screen and (max-width: 768px){
+    .yummycupcake-container{
+        flex-direction: column;
+        position: relative;
+        padding: 20px 0 92px 0;
+        margin: auto;
+        width: 100%;
+    }
+    .yummycupcake-pic{
+        margin: auto;
+        width: 90%;
+    }
+    .yummycupcake-pic img{
+        width: 100%;
+    }
+    .yummycupcake-background{
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+    }
+    .yummycupcake-background img{
+        width: 50%;
+    }
+    .yummycupcake-title{
+        margin-right: auto;
+        margin-top: 50px;
+        margin-right: 15px;
+        /* border: 1px solid red;   */
+    }
+    .yummycupcake-title h4{
+        /* border: 1px solid red; */
+        font-size: 30px;
+    }
+    .yummycupcake-txt{
+        /* border: 1px solid red; */
+        margin-right: 15px;
+        font-size: 12px;
+    }
 }

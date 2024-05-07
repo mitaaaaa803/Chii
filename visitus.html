@@ -22,7 +22,7 @@
             <ul class="header-link">
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
@@ -35,7 +35,7 @@
                 <li><a href="./contactus.html">聯絡我們</a></li>
                 <li>
                     <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
@@ -43,6 +43,7 @@
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
                 <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
             </div>
         </div>
@@ -51,14 +52,14 @@
     <section class="visitus">
         <div class="visitus-container">
             <div class="visitus-title">
-                <h4>Visit Us Anytime</h4>
+                <h4>| 門市資訊 |</h4>
             </div>
             <div class="wrap-pic-txt" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="visitus-pic">
                     <img src="visitus.jpg" alt="">
                 </div>
                 <div class="visitus-txt">
-                    <p>電話: (02)2918-3981</p>
+                    <p>電話: 1234 - 1234</p>
                     <p>營業時間: 週一至週五 10:00~12:00 14:00~17:00</p>
                     <p>地址: 231 新北市新店區博愛街25巷3號1樓
                         (捷運七張站1號出口步行3分鐘)</p>
@@ -91,6 +92,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+
     </script>
 </body>
 </html>

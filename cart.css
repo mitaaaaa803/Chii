@@ -9,19 +9,20 @@
 .cart-shoppingcart{
     margin-bottom: 80px;
     letter-spacing: 2px;
+    color: #5D4C4C;
 }
 .cart-title{
     border-bottom: 1px solid #9a95948e;
     padding-bottom: 15px;
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4, 25% 30% 23% 20%);
     text-align: center;
     letter-spacing: 2px;
     color: #5D4C4C;
 }
 .cart-list{
     display: grid;
-    grid-template-columns: repeat(6, 100px 100px 205px 265px 295px 100px);
+    grid-template-columns: repeat(6, 5% 9% 25% 25% 23%);
     align-items: center;
     margin-top: 20px;
     border-bottom: 1px solid #9a95948e;
@@ -34,8 +35,13 @@
     flex-grow: 1;
     color: #867979;
 }
-.product-desciption-number h5{
-    margin-right: 10px;
+.product-desciption-number input{
+    width: 20px;
+    text-align: center;
+    color: #867979;
+}
+.product-desciption-number input:focus{
+    outline: none;
 }
 .fa-minus{
     color: #9A9594;
@@ -65,6 +71,41 @@
 .cart-list-subtotal{
     color: #9A9594;
 }
+.cart-list-subtotal input{
+    width: 80px;
+    border: none;
+    color: #867979;
+}
+.cart-list-subtotal input:focus{
+    outline: none;
+}
+@media screen and (max-width: 768px){
+    .cart-title{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cart-list-pic{
+        display: none;
+    }
+    .cart-list{
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(4,6% 26% 20% 31%);    
+    }
+    .product-desciption-number h5{
+        display: none;
+    }
+    p{
+        font-size: 14px;
+    }
+    .fa-xmark{
+        font-size: 12px;
+    }
+    .fa-minus{
+        font-size: 10px;
+    }
+    .fa-plus{
+        font-size: 10px;
+    }
+}
 /* 訂單資訊 */
 .cart-total{
     margin-top: 100px;
@@ -87,6 +128,20 @@
     letter-spacing: 2px;
     color: #9A9594;
 }
+.cart-total-subtotal input{
+    border: none;
+    color: #867979;
+}
+.cart-total-subtotal input:focus{
+    outline: none;
+}
+.cart-total-price input{
+    color: #867979;
+    border: none;
+}
+.cart-total-price  input:focus{
+    outline: none;
+}
 .cart-total-price{
     display: flex;
     padding-bottom: 10px;
@@ -99,9 +154,9 @@
     text-decoration: none;
     color: #867979;
     letter-spacing: 2px;
-    border-radius: 5px;
+    border-radius: 2000px;
     background-color:#F2D9D6;
-    padding: 15px;
+    padding: 15px 20px;
     width: 80px;
     text-align: center;
     margin: auto;
@@ -109,5 +164,11 @@
     margin-top: 50px;
 }
 .cart-total-checkout a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
+@media screen and (max-width: 768px){
+    .cart-total-orderinfo h4{
+        font-size: 24px;
+    }
 }

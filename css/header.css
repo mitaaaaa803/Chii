@@ -20,7 +20,11 @@
 .header-link {
     display: flex;
 }
+.header-cart-user a{
+    text-decoration: none;
+}
 .header-link li a{
+    /* border: 1PX solid red; */
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
@@ -29,13 +33,11 @@
     letter-spacing: 5px;
     line-height: 1.5;
 }
-.header-link li a:hover{
-    color: #DE3131;
-}
-.container .header-link li{
+.container .header-link{
     position: relative;
 }
 .submenu{
+    /* border: 1px solid red; */
     display: none;
     position: absolute;
     z-index: 2;
@@ -45,6 +47,15 @@
     border-radius: 0 0 5px 5px;
     padding-bottom: 10px;
 }
+.submenu li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* border: 1px solid red; */
+}
+.submenu li:hover{
+    background-color: rgba(255, 235, 235, 0.498);
+    /* border: 1px solid red; */
+}
 li:hover .submenu{
     display: block;
 }
@@ -52,4 +63,70 @@ li:hover .submenu{
     margin-left: 10px;
     margin-right: 10px;
     color: #878484;
+}
+.fa-bars{
+    display: none;
+}
+.phone_headericon{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .container{
+        position: relative;
+    }
+    .header-link{
+        /* display: none; */
+        border: 1px solid rgba(227, 216, 216, 0.735);
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        position: absolute;
+        background-color: #FDF8F1;
+        z-index: 2;
+        top: 7%;
+        left: -50%;
+        font-size: 58px;
+        width: 50%;
+        height: 83vh;
+    }
+    .header-link li{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        /* border: 1px solid rgba(227, 216, 216, 0.735); */
+    }
+    #submenu1{
+        position: absolute;
+        top: -10px;
+        left: 100%;
+    }
+    #submenu1 li{
+        border: 1px solid rgba(227, 216, 216, 0.735);
+    }
+    #submenu5{
+        position: absolute;
+        top: 28vh;
+        left: 100%;
+    }
+    #submenu5 li{
+        border: 1px solid rgba(227, 216, 216, 0.735);
+    }
+    .submenu li{
+        /* border: 1px solid rgba(227, 216, 216, 0.735); */
+        width: 190px;
+        /* display: none; */
+    }
+    .fa-user{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .header-cart-user{
+        display: flex;
+    }
+    .phone_headericon{
+        display: block;
+    }
 }

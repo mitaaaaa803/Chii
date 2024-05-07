@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #ffffff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination-bullet-active{
+        background: #ffffff;
+    }
+</style>
+
+<body>
+    <section class="collection">
+        <div class="collection-container">
+            <div class="collection-title">
+                <p>作品參考</p>
+                <div class="collection-title-line"></div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="wrap-collection-pic swiper-wrapper">
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection1.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection2.png" alt=""></a>
+                    </div>
+                    </a>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection3.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection4.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection5.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection6.jpg" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection7.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection8.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic swiper-slide">
+                        <a href="#"><img src="collection9.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -2,7 +2,8 @@
     margin-top: 50px;
 }
 .order-title-container{
-    width: 100%;
+    width: 70%;
+    margin: auto;
 }
 .order-notice-container{
     width: 70%;
@@ -11,8 +12,7 @@
 }
 .order-notice-title{
     text-align: center;
-    padding: 100px;
-    background-color: #FDF9F3;
+    padding: 40px 0 20px 0;
     letter-spacing: 3px;
     color: #878484;
     font-size: 28px;
@@ -47,4 +47,18 @@
 .order-notice-question p{
     color: #878484;
     font-size: 18px;
+}
+@media screen and (max-width: 768px){
+    .order-notice-question p{
+        font-size: 12px;
+    }
+    .order-notice-question .order-notice-question-title{
+        font-size: 18px;
+    }
+    .order-notice-container{
+        width: 90%;
+    }
+    .order-notice-title h3{
+        font-size: 25px;
+    }
 }

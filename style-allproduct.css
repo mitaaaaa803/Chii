@@ -7,36 +7,33 @@
     margin: auto;
     /* border: 1px solid red; */
 }
-.wrap-search-icon-txt{
+.search-icon{
     /* border: 1px solid red; */
     display: flex;
     justify-content: end;
     align-items: center;
     position: relative;
 }
-.wrap-search-icon-txt input{
-    background-color: #EDC8C3;
-    border: none;
+.search-icon input{
+    border: 1px solid #EDC8C3;
     border-radius: 8px;
-    line-height: 2;
-}
-.placeholder::placeholder{
+    line-height: 2.5;
     padding-left: 30px;
     letter-spacing: 2px;
 }
 input:focus::placeholder{
     opacity: 0.5;
 }
-.search-icon{
-    /* border: 1px solid red;s */
+.search-icon i{
+    /* border: 1px solid red; */
     position: absolute;
-    right: 145px;
+    right: 170px;
     font-size: 12px;
     color: #878484;
 }
-.wrap-search-icon-txt :focus{
+.search-icon :focus{
     outline: none;
-}
+} 
 
 /* 杯子蛋糕 */
 .cupcake{
@@ -47,9 +44,8 @@ input:focus::placeholder{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
-    gap: 10px;
-    width: 90%;    
-    margin: 0 auto;
+    width: 80%;    
+    margin: auto;
 }
 .cupcake-container a{
     /* border: 1px solid red; */
@@ -67,9 +63,6 @@ input:focus::placeholder{
 }
 .addtocart-button{
     /* border: 1px solid red; */
-    font-size: 11px;
-    text-align: center;
-    letter-spacing: 2px;
     border-radius: 3px;
     background-color: #EDC8C3;
     padding: 15px 30px;
@@ -82,6 +75,8 @@ input:focus::placeholder{
     color: #777777;
     font-size: 12px;
     /* border: 1px solid red; */
+    text-align: center;
+    letter-spacing: 2px;
 }
 .cupcake-txt{
     text-align: center;
@@ -95,6 +90,41 @@ input:focus::placeholder{
     display: block;
     /* transition: 2s; */
 }
+@media screen and (max-width: 1200px){
+    .cupcake-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cupcake-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .cupcake-pic{
+        padding: 0 0 10px 0;
+        width: 250px;
+    }
+    .cupcake-item{
+        border: 1px solid #edc8c32f;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .addtocart-button{
+        padding: 20px 80px;
+        left: 9px;
+        background-color: #edc8c3;
+        
+    }
+    .search-icon i{
+        right: 195px;
+    }
+    .search-icon input{
+        /* padding-left: 130px; */
+    }
+}
+
 /* 頁數 */
 .page{
     padding-top: 80px;
@@ -109,13 +139,9 @@ input:focus::placeholder{
 }
 .page-num{
     font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 20px;
     color: #5d4c4cc9;
-    background-color: #F2D9D6;
-    border-radius: 20px;
+    /* background-color: #F2D9D6; */
 }
 .page-num:hover{
     color: #DE3131;

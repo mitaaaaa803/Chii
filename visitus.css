@@ -6,17 +6,17 @@
     margin: auto;
 }
 .visitus-title{
-    text-align: center;
+    text-align: start;
     color: #878484;
-    font-size: 38px;
-    letter-spacing: 2px;
+    font-size: 32px;
+    letter-spacing: 3px;
 }
 .wrap-pic-txt{
     /* border: 1px solid red; */
     display: flex;
-    margin-top: 100px;
+    margin-top: 70px;
     background-image: url(rectangle1.png);
-    padding: 30px 0 30px 10px;
+    padding: 30px 10px 30px 10px;
 }
 .visitus-pic{
     width: 50%;
@@ -41,4 +41,24 @@
 }
 .visitus-googlemap iframe{
     width: 100%;
+}
+@media screen and (max-width: 768px){
+    .visitus-title{
+        font-size: 28px;
+    }
+    .visitus-pic{
+        width: 100%;
+    }
+    .visitus-pic img{
+        width: 100%;
+    }
+    .wrap-pic-txt{
+        flex-direction: column;
+    }
+    .visitus-txt{
+        margin-top: 20px;
+        margin-top: 20px;
+        padding-left: 0;
+        font-size: 10px;
+    }
 }

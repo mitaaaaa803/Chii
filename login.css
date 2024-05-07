@@ -24,16 +24,16 @@
     padding-bottom: 20px;
 }
 .login-email input{
-    background: #FAEFED;
-    border: none;
+    /* background: #FAEFED; */
+    border: 1px solid #FAEFED;
     height: 50px;
     width: 400px;
-    border-radius: 15px;
+    border-radius: 20px;
     padding-left: 15px;
     letter-spacing: 2px;
 }
 .login-email :focus{
-    border: 0.1em solid #f7e1dd;
+    border: 1px solid #f7e1dd;
     outline: none;
 }
 .login-password{
@@ -42,15 +42,15 @@
     padding-bottom: 20px;
 }
 .login-password :focus{
-    border: 0.05em solid #f7e1dd;
+    border: 1px solid #f7e1dd;
     outline: none;
 }
 input:focus::placeholder{
     opacity: 0.5;
 }
 .login-password input{
-    background: #FAEFED;
-    border: none;
+    /* background: #FAEFED; */
+    border: 1px solid #FAEFED;
     height: 50px;
     width: 400px;
     border-radius: 20px;
@@ -59,9 +59,8 @@ input:focus::placeholder{
 }
 .login-forgotpassword{
     padding-bottom: 20px;
-    padding-left: 380px;
-    margin-bottom: 40px;
-    /* border: 1px solid red; */
+    margin: auto;
+    width: 400px;
 }
 .login-forgotpassword a{
     text-decoration: none;
@@ -72,22 +71,23 @@ input:focus::placeholder{
 .login-forgotpassword a :hover{
     color: #DE3131;
 }
+.login-button:hover{
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
 .login-button{
-    text-align: center;
-    padding: 15px 35px;
-    width: 100px;
-    margin: auto;
-    border: 1px solid #DE3131;
-    border-radius: 20px;
-}
-.login-button a:hover{
-    color: #DE3131;
-}
-.login-button a{
     text-decoration: none;
     color: #878484;
+    background: #F2D9D6;
+    border: none;
     font-size: 20px;
     letter-spacing: 2px;  
+    text-align: center;
+    padding: 15px 30px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 2000px;
 }
 .login-createaccount{
     text-align: center;
@@ -102,4 +102,22 @@ input:focus::placeholder{
 }
 .login-createaccount a:hover{
     color: #DE3131;
+}
+@media screen and (max-width: 768px){
+    .login-title{
+        font-size: 30px;
+    }
+    .login-email input{
+        width: 80%;
+    }
+    .login-password input{
+        width: 80%;
+    }
+    .login-forgotpassword{
+        width: 80%;
+    }
+    .login-button{
+        margin-top: 30px;
+        padding: 10px 25px;
+    }
 }

@@ -12,6 +12,7 @@
     display: flex;
 }
 .wrap-givethemsurprice-txt-button{
+    position: relative;
     padding: 70px 40px 40px 40px;
 }
 .givethemsurprice-title{
@@ -33,27 +34,22 @@
     margin-bottom: 5px;
 }
 .givethemsurprice-button{
-    background-color:#F2D9D6;
-    border-radius: 15px;
-    width: 80px;
-}
-.givethemsurprice-button{
-    margin-top: 30px;
-    padding: 13px 15px;
-    margin-left: auto;
-}
-.givethemsurprice-button a:hover{
-    color: #DE3131;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 }
 .givethemsurprice-button a{
     text-decoration: none;
-    color: #867979;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 3px;
+    background-color: #F2D9D6;
+    padding: 15px 30px;
+    border-radius: 2000px;
+    color: #878484;
+    letter-spacing: 5px;
+    font-size: 16px;
 }
 .givethemsurprice-button a:hover{
-    /* color: #D7C4C4; */
+    color: #F2D9D6;
+    background-color: #de3131d3;
 }
 .givethemsurprice-pic{
     width: 100%;
@@ -62,6 +58,39 @@
     width: 100%;
     border-radius: 10px;
 }
+@media screen and (max-width: 1200px){
+    .wrap-givethemsurprice-txt-button{
+        padding: 10px 10px 40px;
+    }
+    .givethemsurprice-button a{
+    }
+}
+@media screen and (max-width: 768px){
+    .givethemsurprice-container{
+        width: 90%;
+    }
+    .givethemsurprice-pic{
+        margin-top: 50px;
+    }
+    .wrap-givethemsurprice-txt-pic{
+        flex-direction: column;
+    }
+    .wrap-givethemsurprice-txt-button{
+        padding: 20px 40px 40px 40px;
+    }
+    .givethemsurprice-container{
+        padding: 20px 10px 50px 10px;
+    }
+    .givethemsurprice-button{
+        bottom: 0;
+        right: 0;
+    }
+    .givethemsurprice-title{
+        margin-bottom: 20px;
+    }
+}
+
+
 /* 卡片 */
 .makeyourown{
     /* border: 1px solid red; */
@@ -128,29 +157,54 @@
     margin-top: 5px;
 }
 .makeyourown-more{
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    border-radius:10px;
-    background-color:#F2D9D6;
     position: absolute;
     right: 0;
-    bottom: -90px;
-    padding: 15px 20px;
+    bottom: -80px;
 }
 .makeyourown-more a{
-    color: #867979;
     text-decoration: none;
+    background-color: #F2D9D6;
+    padding:  20px;
+    border-radius: 2000px;
+    color: #878484;
+    letter-spacing: 5px;
+    font-size: 16px;
 }
 .makeyourown-more a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
+@media screen and (max-width: 768px){
+    .wrap-makeyourown-card{
+        flex-direction: column;
+    }
+    .makeyourown-card-pic{
+        width: 280px;
+        margin: auto;
+    }
+    .wrap-makeyourown-card-num-price{
+        width: 60%;
+        justify-content: space-around;
+    }
+    .makeyourown-card{
+        margin-bottom: 30px;
+    }
+    .addtocart-button{
+        padding: 20px 105px;
+    }
+    .makeyourown-more{
+        bottom: -70px;
+        padding: 20px;
+    }
 }
 /* 作品參考 */
 .collection{
     margin-top: 200px;
 }
 .collection-container{
-    width: 80%;
+    width: 800px;
     margin: auto;
+    /* border: 1px solid red; */
 }
 .collection-title{
     text-align: center;
@@ -167,15 +221,98 @@
 }
 .wrap-collection-pic{
     /* border: 1px solid red; */
-    margin-top: 30px;
+    margin-top: 28px;
     display: flex;
-    justify-content: space-evenly;
+    width: 267px;
 }
 .collection-pic{
-    width: 290px;
+    /* border: 1px solid black; */
 }
 .collection-pic img{
+    border-radius: 10px;
     width: 100%;
+}
+
+
+/*====輪播====*/
+.collection-container {
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    width: 800px;
+}
+
+.wrap-collection-pic {
+    display: flex;
+    transition: transform 1.5s ease;
+}
+
+.collection-pic {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+.left-arrow {
+    left: 7%;
+    top: -150px;
+    position: relative;
+    display: inline-block;
+}
+
+.right-arrow {
+    right: -92%;
+    top: -150px;
+    position: relative;
+    display: inline-block;
+}
+@media screen and (max-width: 1200px){
+    .wrap-makeyourown-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px){
+    .collection-container{
+        /* width: 75%; */
+        width: 290px;
+        margin: auto;
+    }
+    .arrow{
+        top: 58%;
+    }
+    .wrap-collection-pic {
+        align-items: center;
+        gap: 3px;
+        margin: 10px 0;
+    }
+    .wrap-collection a {
+        margin: 10px 0;
+    }
+    .collection-pic {
+        width: 290px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        float: left;
+        margin-right: 0;
+        margin-left: 0;
+
+    } 
+    .collection-pic img{
+        width: 100%;
+    }
+    .left-arrow {
+        left: 6%;
+        top: -160px;
+        font-size: 20px;
+    }
+    
+    .right-arrow {
+        left: 86%;
+        top: -160px;
+        font-size: 20px;
+    }
+    
 }
 /* 立即諮詢 */
 .consultnow{
@@ -240,4 +377,33 @@ input:focus::placeholder{
 }
 textarea:focus::placeholder{
     opacity: 0.5;
+}
+@media screen and (max-width: 1200px){
+    .wrap-input{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .collection-input{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    input{
+        width: 500px;
+    }
+    .collection-message textarea{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 768px){
+    .consultnow-container{
+        margin: auto;
+    }
+    input{
+        width: 300px;
+    }
+    .collection-message textarea{
+        width: 300px;
+    }
 }

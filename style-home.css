@@ -1,7 +1,7 @@
 /* banner */
 .banner-background{
     width: 100%;
-    height: 607px;
+    height: 615px;
     background-color: #FDF8F1;
     overflow: hidden;
     display: flex;
@@ -9,10 +9,16 @@
     position: relative;
 }
 .banner-txt p{
-    font-size: 50px;
+    font-size: 56px;
     color: #E97976;
     letter-spacing: 5px;
-    line-height: 1.5;
+    line-height: 2;
+}
+.banner-txt p{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 .banner-button{
     /* border: 1px solid red; */
@@ -22,27 +28,24 @@
     text-decoration: none;
     background-color: #F2D9D6;
     padding: 20px 35px 20px;
-    border-radius: 12px;
+    border-radius: 2000px;
     color: #878484;
     letter-spacing: 5px;
     font-size: 16px;
     /* border: 1px solid red; */
 }
 .banner-button a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
 }
 .banner-wrap-txt-button{
     /* border: 1px solid red; */
     margin-left: 50px;
 }
-.banner-pic{
-    /* border: 1px solid red; */
-    width: 650px;
-}
 .banner-pic img{
     width: 100%;
 }
-.banner-page1{
+/* .banner-page1{
     width: 8px;
     height: 8px;
     background-color: #F2D9D6;
@@ -74,11 +77,59 @@
     position: absolute;
     bottom: 8px;
     left: 670px;
-}
+} */
 .banner-page3:hover{
     background-color: #DE3131;
 }
 
+/* ======== */
+.banner-pic{
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-pics{
+    display: flex;
+}
+
+.slide{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .banner-background{
+        flex-direction: column;
+        position: relative;
+    }
+    .banner-txt p{
+        font-size: clamp(30px, 1.111vw, 36px);
+    }
+    .banner-pic{
+        width: 70%;
+    }
+    .banner-pic img{
+        width: 100%;
+    }
+    .banner-wrap-txt-button{
+        width: 100%;
+        position: absolute;
+        bottom: 100px;
+    }
+    .banner-page1{
+        display: none;
+    }
+    .banner-page2{
+        display: none;
+    }
+    .banner-page3{
+        display: none;
+    }
+
+}
 
 /* 禮盒組 */
 .giftbox{
@@ -108,16 +159,16 @@
 .giftbox .giftbox-pic p{
     /* border: 1px solid red; */
     text-align: center;
-    align-content: center;
-    width: 180px;
-    height: 80px;
+    width: 80%;
+    padding: 30px 0;
     background-color: #ffffff90;
     color: #8A7171;
     font-size: 16px;
     letter-spacing: 5px;
     position: absolute;
-    bottom: 40px;
-    left: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .giftbox .giftbox-pic a{ 
     width: 100%;
@@ -135,10 +186,18 @@
         transform: translateX(-15px);
     }
 }
+@media screen and (max-width:768px) {
+    .giftbox .giftbox-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
 
 /* top3 */
 .topthree-container{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     margin-top: 70px;
     /* border: 1px solid red; */
     position: relative;
@@ -193,21 +252,30 @@ a{
 a .topthree-card .card-txt h3:hover{
     color: #DE3131;
 }
-.topthree-more{
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    border-radius:10px;
-    background-color:#F2D9D6;
-    position: absolute;
-    right: 90px;
-    bottom: -50px;
-    padding: 15px 20px;
-}
 .topthree-more a{
     color: #867979;
+    background-color:#F2D9D6;
+    padding: 15px 20px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius:1000px;
+    position: absolute;
+    right: 50px;
+    bottom: -70px;
 }
 .topthree-more a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
+@media screen and (max-width:768px) {
+    .wrap-topthree-card{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .topthree-more a{
+        right: 0;
+    }
 }
 
 /* 創造自己的 */
@@ -235,7 +303,18 @@ a .topthree-card .card-txt h3:hover{
     font-size: 45px;
     letter-spacing: 4px;
 }
-
+@media screen and (max-width:768px){
+    .createyourown-txt{
+        line-height: initial;
+    }
+    .createyourown-txt h4{
+        font-size: clamp(20px, 2.212vw, 42px);
+    }
+    .createyourown-txt p{
+        font-size: clamp(18px, 1.638vw, 40px);
+        text-align: center;
+    }
+}
 /* 我們所做的 */
 .whatwedo-container{
     /* border: 1px solid red; */
@@ -244,12 +323,16 @@ a .topthree-card .card-txt h3:hover{
     padding-top: 90px;
     padding-bottom: 90px;
     background-color: #ffffff;
+    width: 100%;
+    margin: auto;
 }
 .wrap-whatwedo-txt{
     /* border: 1px solid red; */
     align-content: center;
     line-height: 2;
-    padding-left: 15px;
+    padding-left: 30px;
+    width: 95%;
+    margin: auto;
 }
 .whatwedo-txt h4{
     /* border-bottom: 1px solid red; */
@@ -263,12 +346,27 @@ a .topthree-card .card-txt h3:hover{
     /* display: none; */
 }
 .whatwedo-pic{
-    width: 600px;
+    width: 80%;
 }
 .whatwedo-pic img{
     width: 100%;
 }
-
+@media screen and (max-width:768px){
+    .whatwedo-container{
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    .wrap-whatwedo-txt{
+        padding-left: 0;
+    }
+    .whatwedo-pic{
+        width: 100%;
+        margin: auto;
+    }
+    .whatwedo-txt{
+        margin-top: 10px;
+    }
+}
 /* menu */
 .menu-container{
     background-image: url(menu-bg.png);
@@ -316,27 +414,40 @@ a .topthree-card .card-txt h3:hover{
 .menu-item-addtocart{
     background-color: #5D4C4C;
 }
-.menu-item-more{
+.menu-item-more a{
+    color: #867979;
     font-size: 12px;
     letter-spacing: 1.5px;
-    border-radius:10px;
+    border-radius:1000px;
     background-color:#F2D9D6;
     position: absolute;
     right: 155px;
     bottom: 25px;
     padding: 15px 20px;
 }
-.menu-item-more a{
-    color: #867979;
-}
 .menu-item-more a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
 }
-
+@media screen and (max-width:768px){
+    .menu-items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center ;
+        gap: 10px;
+    }
+    .menu-container{
+        background-size: contain;
+    }
+    .menu-item-more a{
+        right: 20px;
+    }
+}
 /* 找到我們 */
 .findus-container{
     /* border: 1px solid red; */
     background-image: url(findus-bg.png);
+    background-size: contain;
     padding-top: 400px;
     /* margin-bottom: 100px; */
     background-size: cover;
@@ -346,24 +457,53 @@ a .topthree-card .card-txt h3:hover{
     /* border: 1px solid red; */
     position: absolute;
     bottom: 150px;
-    right: 10px;
+    right: 110px;
     text-align: center;
     line-height: 3;
+}
+.findus-txt{
     color: #8C8787;
 }
-.findus-button{
+.findus-button a{
+    color: #867979;
     font-size: 12px;
     letter-spacing: 1.5px;
-    border-radius:10px;
+    border-radius:1000px;
     background-color:#F2D9D6;
     position: absolute;
     right: 190px;
     bottom: 80px;
     padding: 15px 50px;
 }
-.findus a{
-    color: #867979;
-}
 .findus a:hover{
-    color: #DE3131;
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
+@media screen and (max-width:768px){
+    .findus-container{
+        margin-bottom: 80px;
+        background-repeat: no-repeat;
+    }
+    .findus-txt{
+        background-color: #FDF8F1;
+        bottom: -22%;
+        right: 0;
+        line-height: 2.2;
+        width: 100%;
+        padding: 20px 0 40px 0;
+        text-align: center;
+    }
+    .findus-txt p{
+        font-size: clamp(12px, 0.5vw, 12px);
+        text-align: start;
+        /* border: 1px solid red; */
+        width: 350px;
+        margin: auto;
+    }
+    .findus-button a{
+        right: 20px;
+        bottom: -65px;
+        padding: 15px 20px;
+    }
+    
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,13 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="makeyourown.css">
+<!-- owl.carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -20,12 +27,12 @@
             <ul class="header-link">
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
-                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
-                    </ul>  
+                        <li><a href="./makeyourown.html">企業禮盒</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="./aboutus.html">關於我們</a></li>
@@ -33,7 +40,7 @@
                 <li><a href="./contactus.html">聯絡我們</a></li>
                 <li>
                     <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
@@ -41,11 +48,12 @@
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
-<!-- 給他們一個驚喜 -->
+    <!-- 給他們一個驚喜 -->
     <section class="givethemsurprice">
         <div class="givethemsurprice-container">
             <div class="wrap-givethemsurprice-txt-pic">
@@ -59,7 +67,7 @@
                         <p>上傳您自己的照片，我們會將它們放在美味的杯子蛋糕上，成為獨特的禮物。</p>
                     </div>
                     <div class="givethemsurprice-button">
-                        <a href="#"><p>瀏覽</p></a>
+                        <a href="#">瀏覽</a>
                     </div>
                 </div>
                 <div class="givethemsurprice-pic">
@@ -80,7 +88,7 @@
                                 <p>加入購物車</p>
                             </div>
                         </div>
-                        
+
                         <div class="makeyourown-txt">
                             <div class="makeyourown-card-name">
                                 <h5>logo杯子蛋糕禮盒</h5>
@@ -93,7 +101,7 @@
                                     <p>$199</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </a>
                 <a href="#">
@@ -162,14 +170,12 @@
                                     <p>$199</p>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
-                </a>  
+                </a>
             </div>
             <div class="makeyourown-more">
-                <a href="#">
-                    <p>更多商品</p>
-                </a>
+                <a href="#">更多商品</a>
             </div>
         </div>
     </section>
@@ -181,25 +187,40 @@
                 <p>作品參考</p>
                 <div class="collection-title-line"></div>
             </div>
-            <div class="wrap-collection-pic">
-                <a href="#">
+            <div class="wrap-collection-pic owl-carousel owl-theme">
                     <div class="collection-pic">
-                        <img src="collection1.png" alt="">
+                        <a href="#"><img src="collection1.png" alt=""></a>
                     </div>
-                </a>
-                <a href="#">
                     <div class="collection-pic">
-                        <img src="collection2.png" alt="">
+                        <a href="#"><img src="collection2.png" alt=""></a>
                     </div>
-                </a>
-                <a href="#">
+                    </a>
                     <div class="collection-pic">
-                        <img src="collection3.png" alt="">
+                        <a href="#"><img src="collection3.png" alt=""></a>
                     </div>
-                </a>   
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection4.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection5.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection6.jpg" alt=""></a>
+                    </div>
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection7.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection8.png" alt=""></a>
+                    </div>
+                    <div class="collection-pic">
+                        <a href="#"><img src="collection9.png" alt=""></a>
+                    </div>
             </div>
         </div>
     </section>
+
+
     <!-- 立即諮詢 -->
     <section class="consultnow">
         <div class="consultnow-container">
@@ -221,7 +242,7 @@
                 </div>
                 <div class="collection-message">
                     <textarea cols="60" rows="20" placeholder="我想要說..."></textarea>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -234,7 +255,7 @@
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footer-txt">
@@ -242,5 +263,39 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                900: {
+                    items: 3
+                }
+            }
+        })
+    </script>
 </body>
+
 </html>

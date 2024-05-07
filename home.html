@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chii | 首頁</title>
     <link rel="stylesheet" href="reset.css">
+    <script src="he"></script>
     <script src="https://kit.fontawesome.com/7a89b1a70b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style-home.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
 
 </head>
+<style>
+    .whatwedo-txt p {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+    }
+
+    .whatwedo-txt p.show {
+        display: block;
+        max-height: 500px;
+        /* 设置一个足够大的值，以确保内容完全展开 */
+    }
+</style>
+
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -20,30 +43,31 @@
                 <a href="./home.html"><img src="favicon.ico"></a>
             </div>
             <ul class="header-link">
-                <li>
-                    <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                <li class="click"><a href="./allproduct.html">商品訂購</a>
+                    <ul class="submenu " id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
-                        <li><a href="./makeyourown.html">企業禮盒</a></li> 
-                    </ul>  
+                        <li><a href="./makeyourown.html">企業禮盒</a></li>
+                    </ul>
                 </li>
 
                 <li><a href="./aboutus.html">關於我們</a></li>
                 <li><a href="./visitus.html">門市資訊</a></li>
                 <li><a href="./contactus.html">聯絡我們</a></li>
-                <li>
-                    <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                <li class="click"><a href="./order.html">常見問題</a>
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
                 </li>
+                <li class="phone_headericon"><a href="./login.html">會員登入</a></li>
+                <li class="phone_headericon"><a href="./cart.html">購物車</a></li>
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -60,14 +84,23 @@
                     <a href="./allproduct.html">現在下單</a>
                 </div>
             </div>
-            
+
             <div class="banner-pic">
-                <img src="banner-pic (2).png">
+                <div class="banner-pics">
+                    <div class="slide"><img src="43_-removebg-preview.png" alt="Slide 1"></div>
+                    <!-- <div class="slide"><img src="41Cake_stand.png" alt="Slide 2"></div> -->
+                </div>
             </div>
-            <a href="#"><div class="banner-page1"></div></a>
-            <a href="#"><div class="banner-page2"></div></a>
-            <a href="#"><div class="banner-page3"></div></a>
-        </div> 
+            <!-- <a href="#">
+                <div class="banner-page1"></div>
+            </a>
+            <a href="#">
+                <div class="banner-page2"></div>
+            </a>
+            <a href="#">
+                <div class="banner-page3"></div>
+            </a> -->
+        </div>
     </section>
 
     <!-- 禮盒組 -->
@@ -81,7 +114,7 @@
             </div>
             <div class="giftbox-pic">
                 <a href="#">
-                    <img src="giftbox-sec.png" alt="">
+                    <img src="giftbox-second.png" alt="">
                     <p>節慶禮盒</p>
                 </a>
             </div>
@@ -96,7 +129,7 @@
 
     <!-- top3 -->
     <section class="topthree">
-        
+
         <div class="topthree-container">
             <div class="topthree-pic">
                 <img src="top3-logo.png" alt="">
@@ -128,7 +161,7 @@
                         </div>
                     </div>
                 </a>
-                
+
                 <a href="#">
                     <div class="topthree-card">
                         <div class="card-pic">
@@ -140,7 +173,7 @@
                         </div>
                     </div>
                 </a>
-            </div> 
+            </div>
             <div class="topthree-more">
                 <a href="./allproduct.html">
                     <p>更多商品</p>
@@ -148,17 +181,17 @@
             </div>
         </div>
     </section>
-    
+
     <!-- 創造你自己的 -->
     <section class="createyourown">
         <div class="createyourown-container">
-                <div class="createyourown-txt" data-aos="zoom-in" data-aos-duration="2000">
-                    <a href="./createyourown-bg.png"> 
-                        <h4>CREATE YOUR OWN</h4>
-                        <p>創造一個屬於你自己的</p>
-                    </a>
-                </div>
+            <div class="createyourown-txt" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="./createyourown-bg.png">
+                    <h4>CREATE YOUR OWN</h4>
+                    <p>創造一個屬於你自己的</p>
+                </a>
             </div>
+        </div>
         </div>
     </section>
 
@@ -168,25 +201,25 @@
         <div class="whatwedo-container">
 
             <div class="whatwedo-pic">
-                <img src="whatwedo-pic.png">
+                <img src="111.png">
             </div>
 
             <div class="wrap-whatwedo-txt">
                 <div class="whatwedo-txt">
                     <h4><span>+ </span>我們所做的</h4>
-                    <p>有一件事，你把它放進心裡，然後用心和愛去灌溉，總有一天，它將在對方的心裡發芽。</p>
+                    <p style="display: block;">有一件事，你把它放進心裡，然後用心和愛去灌溉，總有一天，它將在對方的心裡發芽。</p>
                 </div>
                 <div class="whatwedo-txt">
                     <h4><span>+ </span>婚禮</h4>
-                    <p>有一件事，你把它放進心裡，然後用心和愛去灌溉，總有一天，它將在對方的心裡發芽。</p>
+                    <p>以精緻的手工製作，呈現婚禮禮盒，甜蜜幸福，為每對新人締造難忘的美好回憶。</p>
                 </div>
                 <div class="whatwedo-txt">
                     <h4><span>+ </span>生日派對</h4>
-                    <p>有一件事，你把它放進心裡，然後用心和愛去灌溉，總有一天，它將在對方的心裡發芽。</p>
+                    <p>精心挑選的色彩繽紛紙盒包裝生日禮盒，搭配精美絲帶點綴，展現溫馨與喜悅。每個禮盒內附個性化生日卡片，為每位顧客帶來特別的驚喜與溫暖。</p>
                 </div>
                 <div class="whatwedo-txt">
                     <h4><span>+ </span>配送</h4>
-                    <p>有一件事，你把它放進心裡，然後用心和愛去灌溉，總有一天，它將在對方的心裡發芽。</p>
+                    <p>定時配送服務，確保生日禮盒準時送達。客戶可選擇快遞服務或店內自取，讓您輕鬆享受美味蛋糕的樂趣。此外，店家提供安全包裝，保護禮盒內容完好無損地送達。</p>
                 </div>
             </div>
         </div>
@@ -200,7 +233,7 @@
             </div>
             <div class="menu-items">
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item2.png">
                         </div>
@@ -208,46 +241,46 @@
                             <h5>摩卡森林............$80</h5>
                             <p>(eggs, milk, sugar, choco)</p>
                         </div>
-                    </a>  
+                    </a>
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item1.png">
                         </div>
                         <div class="menu-item-txt">
                             <h5>夢幻之船............$80</h5>
                             <p>(eggs, milk, sugar, choco)</p>
-                        </div> 
-                    </a>   
+                        </div>
+                    </a>
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item3.png">
                         </div>
                         <div class="menu-item-txt">
                             <h5>夏日悠悠............$80</h5>
                             <p>(eggs, milk, sugar, lemon)</p>
-                        </div> 
+                        </div>
                     </a>
-                    
+
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item4.png">
                         </div>
-                        
+
                         <div class="menu-item-txt">
                             <h5>樂巧密語............$80</h5>
                             <p>(eggs, milk, sugar, vanilla)</p>
                         </div>
                     </a>
-                    
+
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item5.png">
                         </div>
@@ -256,21 +289,21 @@
                             <p>(eggs, milk, sugar, vanilla)</p>
                         </div>
                     </a>
-                    
+
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="./allproduct.html">
                         <div class="menu-item-pic">
                             <img src="menu-item6.png">
                         </div>
-                        
+
                         <div class="menu-item-txt">
                             <h5>彩虹派對............$80</h5>
                             <p>(eggs, milk, sugar, vanilla)</p>
                         </div>
-                    
+
                     </a>
-                    
+
                 </div>
             </div>
             <div class="menu-item-more">
@@ -285,10 +318,10 @@
     <section class="findus">
         <div class="findus-container">
             <div class="findus-txt">
-                <p>電話: (02)2918-3981</p>
-                <p>營業時間: 週一至週五 10:00~12:00 14:00~17:00</p>
-                <p>地址: 231 新北市新店區博愛街25巷3號1樓
-                    (捷運七張站1號出口步行3分鐘)</p>
+                <p>電話: 1234-1234</p>
+                <p>營業時間: <span>週一至週五 10:00~12:00 14:00~17:00</span></p>
+                <p>地址: <span>231 新北市新店區博愛街25巷3號1樓</span></p>
+                <p>(捷運七張站1號出口步行3分鐘)</p>
             </div>
             <div class="findus-button">
                 <a href="#">
@@ -306,7 +339,7 @@
             </div>
             <div class="footer-ig-fb">
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>   
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="footer-txt">
@@ -315,10 +348,37 @@
         </div>
     </footer>
 
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function () {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+
+    </script>
+    <script>
+        //我們所做的
+        document.querySelector('.whatwedo-txt:first-of-type p').classList.add('show');
+
+        var headings = document.querySelectorAll('.whatwedo-txt h4, .whatwedo-txt span');
+
+        headings.forEach(function (heading) {
+            heading.addEventListener('click', function () {
+                var content = this.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+
+
+
 </body>
+
 </html>

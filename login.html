@@ -20,7 +20,7 @@
             <ul class="header-link">
                 <li>
                     <a href="./allproduct.html">商品訂購</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu1">
                         <li><a href="./allproduct.html">所有商品</a></li>
                         <li><a href="./makeyourown.html">生日禮盒</a></li>
                         <li><a href="./makeyourown.html">節慶禮盒</a></li>
@@ -33,7 +33,7 @@
                 <li><a href="./contactus.html">聯絡我們</a></li>
                 <li>
                     <a href="./order.html">常見問題</a>
-                    <ul class="submenu">
+                    <ul class="submenu" id="submenu5">
                         <li><a href="./order.html">訂購須知</a></li>
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
@@ -41,6 +41,7 @@
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
                 <a href="./login.html"><i class="fa-solid fa-user"></i></a>   
             </div>
         </div>
@@ -51,20 +52,18 @@
         <div class="login-container">
             <div class="wrap-login">
                 <div class="login-title">
-                    <p>Login</p>
+                    <p>登入</p>
                 </div>
                 <div class="login-email">
-                    <input type="email" placeholder="電子信箱">
+                    <input type="email" placeholder="電子信箱" value="example@example.com">
                 </div>
                 <div class="login-password">
-                    <input type="password" placeholder="密碼">
+                    <input type="password" placeholder="密碼" value="password123">
                 </div>
                 <div class="login-forgotpassword">
                     <a href="#"><p>忘記密碼?</p></a>
                 </div>
-                <div class="login-button">
-                    <a href="#"><p>登入</p></a>
-                </div>
+                <button class="login-button">登入</button>
                 <div class="login-createaccount">
                     <a href="#"><p>建立帳戶</p></a>
                 </div>
@@ -88,5 +87,57 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // 導覽列
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            let headerLink = document.querySelector('.header-link')
+            let currentLeft = parseInt(headerLink.style.left)
+
+            headerLink.style.transition = "1s"
+            headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+        });
+
+    </script>
+    <script>
+    // 獲取元素
+    const emailInput = document.querySelector('.login-email input');
+    const passwordInput = document.querySelector('.login-password input');
+    const loginButton = document.querySelector('.login-button');
+
+    // 設置登入信息
+    const expectedEmail = 'example@example.com';
+    const expectedPassword = 'password123';
+
+    // 設置登入計數器
+    let loginAttempts = 3;
+
+    // 添加事件監聽器
+    loginButton.addEventListener('click', function() {
+        // 獲取輸入的電子郵件和密碼
+        const enteredEmail = emailInput.value;
+        const enteredPassword = passwordInput.value;
+
+    // 檢查是否匹配預期的電子郵件和密碼
+    if (enteredEmail === expectedEmail && enteredPassword === expectedPassword) {
+        alert('登入成功！');
+        // 重定向到主頁
+        window.location.href = 'home.html';
+    } else {
+        // 減少登入嘗試次數
+        loginAttempts--;
+
+        if (loginAttempts > 0) {
+            alert(`電子郵件或密碼錯誤！還有 ${loginAttempts} 次嘗試機會。`);
+        } else {
+            alert('登入失敗，請稍後再試。');
+            // 重定向到主頁
+            window.location.href = 'home.html';
+        }
+    }
+});
+
+
+    </script>
 </body>
 </html>
