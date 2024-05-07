@@ -39,6 +39,8 @@
                         <li><a href="./order.html">訂單相關問題</a></li>
                     </ul>
                 </li>
+                <li class="phone_headericon"><a href="./login.html">會員登入</a></li>
+                <li class="phone_headericon"><a href="./cart.html">購物車</a></li>
             </ul>
             <div class="header-cart-user">
                 <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -106,5 +108,16 @@
     <script>
         AOS.init();
     </script>
+
+<script>
+    // 導覽列
+    document.querySelector('.fa-bars').addEventListener('click', function() {
+        let headerLink = document.querySelector('.header-link')
+        let currentLeft = parseInt(headerLink.style.left)
+
+        headerLink.style.transition = "1s"
+        headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
+    });
+</script>
 </body>
 </html>
