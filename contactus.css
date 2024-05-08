@@ -125,7 +125,7 @@ textarea:focus::placeholder{
     /* border: 1px solid red; */
     position: absolute;
     bottom: 150px;
-    text-align: center;
+    text-align: start;
     right: 100px;
     line-height: 3;
     color: #8C8787;
@@ -138,7 +138,7 @@ textarea:focus::placeholder{
     border-radius:1000px;
     background-color:#F2D9D6;
     position: absolute;
-    right: 190px;
+    right: 210px;
     bottom: 80px;
     padding: 15px 50px;
 }
@@ -151,19 +151,26 @@ textarea:focus::placeholder{
         background-size: cover;
     }
     .findus a{
-        right: 115px;
-        bottom: -95px;
+        right: 20px;
+        bottom: -80px;
+        padding: 15px 20px;
     }
     .findus-txt{
         /* border: 1px solid red; */
         background-color: #FDF8F1;
-        padding-top: 30px;
-        padding-bottom: 80px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         width: 100%;
         right: 0;
         bottom: -120px;
         line-height: 2.5;
         font-size: 12px;
+    }
+    .findus-txt p{
+        font-size: clamp(12px, 0.5vw, 12px);
+        /* border: 1px solid red; */
+        width: 350px;
+        margin: auto;
     }
     .footer{
         /* border: 1px solid red; */

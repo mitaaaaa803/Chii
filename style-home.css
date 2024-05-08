@@ -45,42 +45,6 @@
 .banner-pic img{
     width: 100%;
 }
-/* .banner-page1{
-    width: 8px;
-    height: 8px;
-    background-color: #F2D9D6;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 8px;
-    left: 610px;
-}
-.banner-page1:hover{
-    background-color: #DE3131;
-}
-.banner-page2{
-    width: 8px;
-    height: 8px;
-    background-color: #F2D9D6;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 8px;
-    left: 640px;
-}
-.banner-page2:hover{
-    background-color: #DE3131;
-}
-.banner-page3{
-    width: 8px;
-    height: 8px;
-    background-color: #F2D9D6;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 8px;
-    left: 670px;
-} */
-.banner-page3:hover{
-    background-color: #DE3131;
-}
 
 /* ======== */
 .banner-pic{
@@ -118,15 +82,6 @@
         width: 100%;
         position: absolute;
         bottom: 100px;
-    }
-    .banner-page1{
-        display: none;
-    }
-    .banner-page2{
-        display: none;
-    }
-    .banner-page3{
-        display: none;
     }
 
 }
@@ -458,7 +413,7 @@ a .topthree-card .card-txt h3:hover{
     position: absolute;
     bottom: 150px;
     right: 110px;
-    text-align: center;
+    text-align: start;
     line-height: 3;
 }
 .findus-txt{
@@ -471,7 +426,7 @@ a .topthree-card .card-txt h3:hover{
     border-radius:1000px;
     background-color:#F2D9D6;
     position: absolute;
-    right: 190px;
+    right: 210px;
     bottom: 80px;
     padding: 15px 50px;
 }
@@ -495,7 +450,6 @@ a .topthree-card .card-txt h3:hover{
     }
     .findus-txt p{
         font-size: clamp(12px, 0.5vw, 12px);
-        text-align: start;
         /* border: 1px solid red; */
         width: 350px;
         margin: auto;

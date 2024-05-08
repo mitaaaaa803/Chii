@@ -276,45 +276,100 @@
             headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
         });
 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.querySelector('.placeholder');
+            const cupcakes = document.querySelectorAll('.cupcake-item');
+
+            input.addEventListener('keydown', function (event) {
+                if (event.keyCode === 13) {
+                    const searchValue = this.value.toLowerCase();
+                    let foundCupcake = null;
+
+                    cupcakes.forEach(cupcake => {
+                        const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
+
+                        if (title.includes(searchValue)) {
+                            cupcake.style.display = 'block';
+
+                            // 如果找到匹配的產品，將它存儲為 foundCupcake
+                            if (title === '香草櫻桃') {
+                                foundCupcake = cupcake;
+                            }
+                        } else {
+                            cupcake.style.display = 'none';
+                        }
+                    });
+
+                    // 如果找到了香草櫻桃，並且它不在第一個位置，則將其移動到第一個位置
+                    if (foundCupcake && foundCupcake !== cupcakes[0]) {
+                        foundCupcake.parentNode.insertBefore(foundCupcake, cupcakes[0]);
+                    }
+                }
+            });
+
+            input.addEventListener('keyup', function (event) {
+                const searchValue = this.value.trim().toLowerCase();
+
+                if (searchValue === '') {
+                    cupcakes.forEach(cupcake => {
+                        cupcake.style.display = 'block';
+                    });
+                } else if (event.keyCode === 13) {
+                    cupcakes.forEach(cupcake => {
+                        const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
+
+                        if (title.includes(searchValue)) {
+                            cupcake.style.display = 'block';
+                        } else {
+                            cupcake.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+
         //搜尋
-        const input = document.querySelector('.placeholder');
-        const cupcakes = document.querySelectorAll('.cupcake-item');
+        // const input = document.querySelector('.placeholder');
+        // const cupcakes = document.querySelectorAll('.cupcake-item');
 
-        input.addEventListener('keydown', function (event) {
-            if (event.keyCode === 13) {
-                const searchValue = this.value.toLowerCase();
+        // input.addEventListener('keydown', function (event) {
+        //     if (event.keyCode === 13) {
+        //         const searchValue = this.value.toLowerCase();
 
-                cupcakes.forEach(cupcake => {
-                    const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
+        //         cupcakes.forEach(cupcake => {
+        //             const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
 
-                    if (title.includes(searchValue)) {
-                        cupcake.style.display = 'block';
-                    } else {
-                        cupcake.style.display = 'none';
-                    }
-                });
-            }
-        });
+        //             if (title.includes(searchValue)) {
+        //                 cupcake.style.display = 'block';
+        //             } else {
+        //                 cupcake.style.display = 'none';
+        //             }
+        //         });
+        //     }
+        // });
 
-        input.addEventListener('keyup', function (event) {
-            const searchValue = this.value.trim().toLowerCase();
+        // input.addEventListener('keyup', function (event) {
+        //     const searchValue = this.value.trim().toLowerCase();
 
-            if (searchValue === '') {
-                cupcakes.forEach(cupcake => {
-                    cupcake.style.display = 'block';
-                });
-            } else if (event.keyCode === 13) {
-                cupcakes.forEach(cupcake => {
-                    const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
+        //     if (searchValue === '') {
+        //         cupcakes.forEach(cupcake => {
+        //             cupcake.style.display = 'block';
+        //         });
+        //     } else if (event.keyCode === 13) {
+        //         cupcakes.forEach(cupcake => {
+        //             const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
 
-                    if (title.includes(searchValue)) {
-                        cupcake.style.display = 'block';
-                    } else {
-                        cupcake.style.display = 'none';
-                    }
-                });
-            }
-        });
+        //             if (title.includes(searchValue)) {
+        //                 cupcake.style.display = 'block';
+        //             } else {
+        //                 cupcake.style.display = 'none';
+        //             }
+        //         });
+        //     }
+        // });
     </script>
 </body>
 

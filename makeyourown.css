@@ -375,6 +375,28 @@ input:focus::placeholder{
 textarea:focus::placeholder{
     opacity: 0.5;
 }
+.owl-nav{
+    color: #7F7F7F;
+    font-size: 22px;
+}
+.collection-button{
+    text-align: center;
+    margin-top: 50px;
+}
+.collection-button a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: #867979;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border-radius:1000px;
+    background-color:#F2D9D6;
+    padding: 15px 50px;
+}
+.collection-button a:hover{
+    color: #F2D9D6;
+    background-color: #de3131d3;
+}
 @media screen and (max-width: 1200px){
     .wrap-input{
         flex-direction: column;
@@ -402,5 +424,8 @@ textarea:focus::placeholder{
     }
     .collection-message textarea{
         width: 300px;
+    }
+    .owl-nav{
+        display: none;
     }
 }
