@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <!-- 導覽列 -->
     <header class="header">
@@ -275,8 +276,7 @@
             headerLink.style.left = (currentLeft === 0) ? '-50%' : '0'
         });
 
-    </script>
-    <script>
+        //搜尋
         const input = document.querySelector('.placeholder');
         const cupcakes = document.querySelectorAll('.cupcake-item');
 
@@ -297,26 +297,24 @@
         });
 
         input.addEventListener('keyup', function (event) {
-    const searchValue = this.value.trim().toLowerCase();
+            const searchValue = this.value.trim().toLowerCase();
 
-    if (searchValue === '') {
-        cupcakes.forEach(cupcake => {
-            cupcake.style.display = 'block';
-        });
-    } else if (event.keyCode === 13) {
-        cupcakes.forEach(cupcake => {
-            const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
+            if (searchValue === '') {
+                cupcakes.forEach(cupcake => {
+                    cupcake.style.display = 'block';
+                });
+            } else if (event.keyCode === 13) {
+                cupcakes.forEach(cupcake => {
+                    const title = cupcake.querySelector('.cupcake-txt h4').textContent.toLowerCase();
 
-            if (title.includes(searchValue)) {
-                cupcake.style.display = 'block';
-            } else {
-                cupcake.style.display = 'none';
+                    if (title.includes(searchValue)) {
+                        cupcake.style.display = 'block';
+                    } else {
+                        cupcake.style.display = 'none';
+                    }
+                });
             }
         });
-    }
-});
-
-
     </script>
 </body>
 
