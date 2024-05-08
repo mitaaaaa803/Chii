@@ -446,7 +446,7 @@ a .topthree-card .card-txt h3:hover{
         line-height: 2.2;
         width: 100%;
         padding: 20px 0 40px 0;
-        text-align: center;
+        text-align: start;
     }
     .findus-txt p{
         font-size: clamp(12px, 0.5vw, 12px);
